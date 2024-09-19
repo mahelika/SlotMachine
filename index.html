@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slot-machine">
+        <h1 class="title">Slot Machine</h1>
+        <div id="reels" class="reels">
+            <div class="reel-column">
+                <div id="reel1-1" class="reel"></div>
+                <div id="reel1-2" class="reel"></div>
+                <div id="reel1-3" class="reel"></div>
+            </div>
+            <div class="reel-column">
+                <div id="reel2-1" class="reel"></div>
+                <div id="reel2-2" class="reel"></div>
+                <div id="reel2-3" class="reel"></div>
+            </div>
+            <div class="reel-column">
+                <div id="reel3-1" class="reel"></div>
+                <div id="reel3-2" class="reel"></div>
+                <div id="reel3-3" class="reel"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="input-group">
+                <label for="deposit">Deposit Amount</label>
+                <input type="number" id="deposit" min="1">
+            </div>
+            <div class="input-group">
+                <label for="lines">Lines</label>
+                <input type="number" id="lines" min="1" max="3">
+            </div>
+            <div class="input-group">
+                <label for="bet">Bet Per Line</label>
+                <input type="number" id="bet" min="1">
+            </div>
+            <button id="spinButton">Spin</button>
+            <div id="lever" class="lever"></div>
+            <button id="exitButton">Exit</button>
+            <div id="balance" class="balance">Balance: $0</div>
+            <div id="message" class="message"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
